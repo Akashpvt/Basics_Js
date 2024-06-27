@@ -33,10 +33,34 @@ const myFunction = function(){
 
 // The typeof Operator
 
-console.log(typeof  score);//Number
-console.log(typeof isLoggedIn); // Boolean
-console.log(typeof   outsideTemp); // Object
-console.log(typeof  anotherId); // Symbol
-console.log(typeof  bigNumber); //bigint
-console.log(typeof  myFunction); // ObjectFunction
-console.log(typeof heros); // Objects
+//console.log(typeof  score);//Number
+//console.log(typeof isLoggedIn); // Boolean
+//console.log(typeof   outsideTemp); // Object
+//console.log(typeof  anotherId); // Symbol
+//console.log(typeof  bigNumber); //bigint
+//console.log(typeof  myFunction); // ObjectFunction
+//console.log(typeof heros); // Objects
+
+//************************************
+
+// Stack ko (Primitive type me use krte hai )
+// Heap ko (Non Primitive Type me use krte hai)
+
+let myName = "Akash"
+
+let anothername = myName
+anothername = "rahul"
+
+console.log(myName);
+console.log(anothername);
+
+let userOne = {
+    email:"user@gmail.com",
+    age:22
+}
+let userTwo = userOne
+    userTwo.email ="aksh@gamil.com"
+
+    console.log(userOne.email);
+    console.log(userTwo.email);
+
